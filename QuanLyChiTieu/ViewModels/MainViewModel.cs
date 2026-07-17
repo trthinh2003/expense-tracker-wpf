@@ -14,7 +14,7 @@ namespace QuanLyChiTieu.ViewModels
 
 
         public MainViewModel(
-            IKhoanChiService khoanChiService, 
+            IKhoanChiService khoanChiService,
             INguoiDungService nguoiDungService,
             IHinhAnhService hinhAnhService
         )
@@ -71,6 +71,13 @@ namespace QuanLyChiTieu.ViewModels
             set => SetProperty(ref _duongDanAnhTamThoi, value);
         }
 
+        private string _tieuDeThongTin = string.Empty;
+        public string TieuDeThongTin
+        {
+            get => _tieuDeThongTin;
+            set => SetProperty(ref _tieuDeThongTin, value);
+        }
+
         public RelayCommand ChonAnhCommand { get; }
 
         public AsyncRelayCommand ThemCommand { get; }
@@ -103,6 +110,8 @@ namespace QuanLyChiTieu.ViewModels
             foreach (var n in nguoiDung) DanhSachNguoiDung.Add(n);
 
             NguoiTraDuocChon ??= DanhSachNguoiDung.FirstOrDefault();
+
+            TieuDeThongTin = $"{DanhSachNguoiDung.Count} người · Tháng {DateTime.Now.Month}/{DateTime.Now.Year}";
 
             await TaiDanhSachChiTieuAsync();
         }

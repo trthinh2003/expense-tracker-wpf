@@ -24,7 +24,7 @@
             <StackPanel>
                 <TextBlock Text="Quản lý chi tiêu trọ" FontSize="22" FontWeight="Bold"
                            Foreground="{StaticResource MauChuChinh}"/>
-                <TextBlock Text="3 người · Tháng 7/2026" FontSize="12.5"
+                <TextBlock Text="{Binding TieuDeThongTin}" FontSize="12.5"
                            Foreground="{StaticResource MauChuPhu}"/>
             </StackPanel>
         </StackPanel>
