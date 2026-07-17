@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Bảng màu chủ đạo: xanh ngọc trầm + nền sáng, dịu mắt -->
+    <SolidColorBrush x:Key="MauChinh" Color="#2E7D6E"/>
+    <SolidColorBrush x:Key="MauChinhDam" Color="#215B4F"/>
+    <SolidColorBrush x:Key="MauChinhNhat" Color="#E8F3F0"/>
+
+    <SolidColorBrush x:Key="MauNen" Color="#F7F8FA"/>
+    <SolidColorBrush x:Key="MauNenCard" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="MauVien" Color="#E3E6EA"/>
+
+    <SolidColorBrush x:Key="MauChuChinh" Color="#1F2937"/>
+    <SolidColorBrush x:Key="MauChuPhu" Color="#6B7280"/>
+
+    <SolidColorBrush x:Key="MauDo" Color="#DC4C4C"/>            <!-- dùng cho nợ/âm -->
+    <SolidColorBrush x:Key="MauXanhDuong" Color="#3B82F6"/>     <!-- dùng cho dư/dương -->
+</ResourceDictionary>

@@ -1,0 +1,66 @@
+# Build results
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/x64/
+**/x86/
+**/[Ll]og/
+**/[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# EF Core / Database local files
+*.mdf
+*.ldf
+*.ndf
+
+# App secrets / local config (không muốn public connection string thật)
+appsettings.Development.json
+appsettings.local.json
+appsettings.Production.json
+secrets.json
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+[Nn]uget.Config
+!.nuget/NuGet.Config
+
+# Rider / VS Code
+.idea/
+.vscode/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# Published output
+**/publish/
+*.publish.xml
+*.pubxml
+*.pubxml.user
+*.azurePubxml
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# ClickOnce
+publish/
+
+# Crash dumps
+*.dmp
